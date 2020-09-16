@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tip Calculator</title>
-  </head>
-  <body>
-    <p>How much does the meal cost? <input id="mealAmount" /></p>
-    <p>The tip should be <input id="tipAmount" /></p>
+</head>
+
+<body>
+    <p>How much does the meal cost? <input id="mealAmount" type="text" /></p>
+    <p>The tip should be</p>
+
+    <input type="radio" id="tiplevel1" checked>
+    <label for="10%">10%</label><br>
+    <input type="radio" id="tiplevel2">
+    <label for="15%">15%</label><br>
+    <input type="radio" id="tiplevel3">
+    <label for="20%">20%</label>
+
     <script src="./index.js"></script>
-  </body>
+</body>
+
 </html>
