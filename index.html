@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8" />
@@ -8,15 +8,19 @@
 </head>
 
 <body>
-    <p>How much does the meal cost? <input id="mealAmount" type="text" /></p>
+    <p>How much does the meal cost? <input id="mealAmount" /></p>
     <p>The tip should be</p>
 
-    <input type="radio" id="tiplevel1" checked>
-    <label for="10%">10%</label><br>
-    <input type="radio" id="tiplevel2">
-    <label for="15%">15%</label><br>
-    <input type="radio" id="tiplevel3">
+    <input type="radio" id="tipPercent" name="rd1" value="0.15">
+    <label for="15">15%</label><br>
+    <input type="radio" id="tipPercent18" name="rd2" value="0.18">
+    <label for="18%">18%</label>
+    <br>
+    <input type="radio" id="tipPercent20" name="rd2" value="0.2">
     <label for="20%">20%</label>
+    <br>
+    <p>Meal Total<input id="totalAmount" /></p>
+
 
     <script src="./index.js"></script>
 </body>
